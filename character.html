@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character</title>
+    <link rel="stylesheet" href="_css/bootstrap.css">
+    <script src="_js/jquery.min.js"></script>
+    <script src="_js/popper.min.js"></script>
+    <script src="_js/bootstrap.min.js"></script>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0px;
+            padding: 0px;
+            font-weight: bold;
+            font-family: 微軟正黑體;
+            background: url(img/bg_main.png) fixed;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        h1,
+        h5 {
+            font-weight: bold;
+            color: white;
+        }
+        
+        .nav {
+            height: 1000px;
+            width: 250px;
+            background-color: black;
+            float: left;
+            /* position: fixed; */
+        }
+        
+        li {
+            font-size: large;
+            list-style-type: none;
+        }
+        
+        .list {
+            text-decoration: none;
+            color: white
+        }
+        
+        .nav li a:hover {
+            text-decoration: underline;
+            color: white
+        }
+        
+        .carousel {
+            float: right;
+            margin-right: 30px;
+            width: 1200px;
+        }
+        
+        .carousel-inner {
+            margin-top: 100px;
+        }
+        
+        .charlist_left {
+            float: left;
+            margin-left: 100px;
+        }
+        
+        .charlist_right {
+            float: right;
+            width: 500px;
+            height: 700px;
+            margin-right: 150px;
+        }
+        
+        .char {
+            height: 700px;
+        }
+        
+        .charasmall {
+            width: 350px;
+        }
+        /* Indicators list style */
+        
+        .carousel-indicators {
+            bottom: -100px;
+            left: 0;
+            margin-left: 5px;
+            width: 100%;
+        }
+        /* Indicators list style */
+        
+        .carousel-indicators li {
+            border: medium none;
+            border-radius: 0;
+            height: 100px;
+            margin-bottom: 5px;
+            margin-left: 0;
+            margin-right: 5px;
+            margin-top: 0;
+            width: 100px;
+        }
+        /* Indicators images style */
+        
+        .carousel-indicators img {
+            float: left;
+            height: 90px;
+            left: 0;
+            width: 100px;
+        }
+        /* Indicators active image style */
+        
+        .carousel-indicators .active img {
+            opacity: 0.7;
+        }
+        
+        .carousel-control-prev {
+            width: 100px;
+            margin-left: 0px;
+        }
+        
+        .carousel-control-next {
+            width: 100px;
+            margin-right: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contain">
+        <div class="nav">
+            <a href="index.html"><img src="img/logo_main01.png" style="width: 230px; height:130px; margin-top: 50px; margin-left: 10px;"></a>
+            <ul>
+                <li><a href="story.html" class="list">STORY</a></li> <br><br>
+                <li><a href="#" class="list">CHARACTER</a></li> <br><br>
+                <li><a href="stuff.html" class="list">STAFF & CAST</a></li> <br><br>
+            </ul>
+        </div>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+            <ul class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                    <img src="img/btn_character01.png" alt="">
+                </li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                    <img src="img/btn_character02.png" alt="">
+                </li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                    <img src="img/btn_character03.png" alt="">
+                </li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3">
+                    <img src="img/btn_character04.png" alt="">
+                </li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4">
+                    <img src="img/btn_character05.png" alt="">
+                </li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5">
+                    <img src="img/btn_character06.png" alt="">
+                </li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6">
+                    <img src="img/btn_character07.png" alt="">
+                </li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="7">
+                    <img src="img/btn_character11.png" alt="">
+                </li>
+            </ul>
+            <h1 style="text-decoration: underline;margin-top: 30px;">Character</h1>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="charlist_left">
+                        <img class="char" src="img/img_character01.png">
+                    </div>
+                    <div class="charlist_right">
+                        <h1>千空</h1>
+                        <img class="charasmall" src="img/img_charasmall01.png" alt="">
+                        <h5 style="margin-top: 20px;">超人的な頭脳と豊富な知識、強い探求心を持つ根っからの科学少年。文明の途絶えた石の世界（ストーンワールド）に科学の力でゼロから文明を取り戻そうとする。クールで合理的な考え方をする反面、熱く仲間を思う気持ちは強い。石神村の長となり「科学王国」を率いて、「司帝国」に立ち向かう。口癖は「唆るぜ、これは」
+                        </h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="charlist_left"><img class="char" src="img/img_character02.png">
+                    </div>
+                    <div class="charlist_right">
+                        <h1>大木 大樹</h1>
+                        <img class="charasmall" src="img/img_charasmall02.png" alt="">
+                        <h5 style="margin-top: 20px;">千空と幼馴染の高校生。実直で友達思いの優しい性格。けた外れの頑丈さと単純さで千空を支える。争いを好まないため人を攻撃する事は苦手。幼馴染の杠にずっと想いを寄せている。石化からの復活後、千空と別れ、杠と共に「司帝国」にスパイとして潜入している。
+                        </h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="charlist_left"><img class="char" src="img/img_character03.png">
+                    </div>
+                    <div class="charlist_right">
+                        <h1>小川 杠</h1>
+                        <img class="charasmall" src="img/img_charasmall03.png" alt="">
+                        <h5 style="margin-top: 20px;">大樹がずっと想いを寄せている高校生。千空、大樹とは幼馴染。手芸部所属で、手先が超絶器用。石化した鳥を心配して動物病院に連れて行くなど、優しい心の持ち主。石化からの復活後、千空と別れ、大樹と共に「司帝国」にスパイとして潜入。千空からあるミッションを託されている。
+                        </h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="charlist_left"><img class="char" src="img/img_character04.png">
+                    </div>
+                    <div class="charlist_right">
+                        <h1>獅子王 司</h1>
+                        <img class="charasmall" src="img/img_charasmall04.png">
+                        <h5 style="margin-top: 20px;">霊長類最強の高校生。素手でライオンを倒す脅威の武力を持つ男。常に冷静で理知的。純粋な若者だけで、既得権益のない理想の世界を作るべきだと考えている。石化復活液を手に入れたのち、自ら選んだ若者だけを甦らせて「司帝国」を築き、千空率いる「科学王国」と対立する。
+                        </h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="charlist_left"><img class="char" src="img/img_character05.png">
+                    </div>
+                    <div class="charlist_right">
+                        <h1>コハク</h1>
+                        <img class="charasmall" src="img/img_charasmall05.png">
+                        <h5 style="margin-top: 20px;"> 軽い身のこなしと高い経験値で男にも引けを取らない武力の持ち主。古風な話し方をする。千空の生き様を気に入り、サルファ剤で姉のルリが病気を克服したのちも「科学王国」の仲間として千空に力を貸す。
+                        </h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="charlist_left"><img class="char" src="img/img_character06.png">
+                    </div>
+                    <div class="charlist_right">
+                        <h1>クロム</h1>
+                        <img class="charasmall" src="img/img_charasmall06.png">
+                        <h5 style="margin-top: 20px;">好奇心旺盛で賢く、まっすぐな性格。ルリの病を治そうと様々な素材を収集していた。千空と出会い科学に魅せられて、共に科学を極めんと突き進む「科学王国」の仲間。柔軟な発想の持ち主で、時に千空を驚かせる科学使い。
+                        </h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="charlist_left"><img class="char" src="img/img_character07.png">
+                    </div>
+                    <div class="charlist_right">
+                        <h1>あさぎりゲン</h1>
+                        <img class="charasmall" src="img/img_charasmall07.png">
+                        <h5 style="margin-top: 20px;">司によって石化から復活したマジシャン兼メンタリスト。ペラッペラな軽い口調で飄々と話し、類稀な話術で相手を翻弄する。声帯模写も得意。司のスパイとして石神村に現れるが、次第に千空の文明を築く力に惹かれ、科学王国の仲間になる。
+                        </h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="charlist_left"><img class="char" src="img/img_character11.png">
+                    </div>
+                    <div class="charlist_right">
+                        <h1>ルリ</h1>
+                        <img class="charasmall" src="img/img_charasmall11.png">
+                        <h5 style="margin-top: 20px;">コハクの姉で石神村の巫女。幼い頃から病弱で重い病気＝肺炎を患っていたが千空達の作ったサルファ剤により完治。その後、巫女が代々伝承する「百物語」の継承者。妹思いの優しい性格。
+                        </h5>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
